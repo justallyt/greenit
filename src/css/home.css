@@ -1,0 +1,62 @@
+.hero-section{
+       padding: 80px 0;
+}
+.hero-section-content .hero-texts{
+        display: grid;
+        grid-template-columns: 2fr 0.8fr;
+        gap: 50px;
+        align-items: center;
+}
+.hero-texts h1{
+       font-size: 60px;
+       font-family: "DM Sans";
+}
+.hero-texts h1 span{
+      color: var(--secondary-color);
+}
+.hero-texts p{
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 20px;
+}
+.hero-texts a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 50px;
+      font-size: 16px;
+      border: 2px solid var(--main-color);
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      transition: all 0.7s ease;
+      -webkit-transition: all 0.7s ease;
+      -moz-transition: all 0.7s ease;
+      -ms-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+}
+.hero-texts a:hover{
+       color: var(--main-color);
+       transform: scale(0.95);
+       -webkit-transform: scale(0.95);
+       -moz-transform: scale(0.95);
+       -ms-transform: scale(0.95);
+       -o-transform: scale(0.95);
+}
+
+.hero-image{
+       height: 85vh;
+       margin-top: 30px;
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+       overflow: hidden;
+       background: url("../assets/landing1.jpg") no-repeat;
+       background-size: cover;
+       background-position: center;
+}

@@ -7,13 +7,15 @@
 }
 
 :root{
-     --main-color: green;
+     --main-color: rgb(90, 209, 104);
+     --secondary-color: rgb(0, 157, 255);
      --font-primary: 'Kumbh Sans';
      --header-font: 'DM Sans';
 }
 
 body{
-       font-family: var(--font-primary)
+       font-family: var(--font-primary);
+       background: rgba(246, 248, 246, 0.6);
 }
 
 ul{
@@ -27,4 +29,85 @@ a{
 img{
      width: 100%;
      height: 100%;
+}
+
+.inner-row{
+       width: 1280px;
+       margin: auto;
+}
+.title-tag{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     margin-bottom: 10px;
+}
+.title-tag span{
+       display: flex;
+       width: 50px;
+       height: 2px;
+       border-radius: 10px;
+       background: var(--main-color);
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+}
+.title-tag h3{
+       font-size: 18px;
+       font-weight: 500;
+       color: var(--main-color);
+}
+
+/* Header Styles */
+header{
+      height: 85px;
+}
+.header-content{
+       border-bottom: 1px solid rgba(211, 218, 214, 0.5);
+       padding-bottom: 5px;
+       display: flex;
+       justify-content: space-between;
+}
+.header-content .logo{
+        display: flex;
+        width: 150px;
+        height: 80px;
+}
+.header-content .logo img{
+        object-fit: contain;
+}
+
+.header-content nav{
+     display: flex;
+     gap: 60px;
+     align-items: center;
+}
+.header-content nav ul{
+     display: flex;
+     gap: 40px;
+}
+.header-content nav ul li a{
+       color: #111;
+       font-size: 16px;
+}
+.header-content nav ul li a:hover,
+.header-content nav ul li a.active{
+       color: var(--main-color);
+       font-weight: 500;
+}
+
+.header-content .header-btn a{
+       width: 180px;
+       height: 50px;
+       background: var(--main-color);
+       display: flex;
+       color: white;
+       justify-content: center;
+       align-items: center;
+       font-size: 15px;
+       border-radius: 5px;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       -ms-border-radius: 5px;
+       -o-border-radius: 5px;
 }
