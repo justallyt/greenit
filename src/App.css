@@ -9,6 +9,7 @@
 :root{
      --main-color: rgb(90, 209, 104);
      --secondary-color: rgb(0, 157, 255);
+     --dark-color: rgb(0, 19, 6);
      --font-primary: 'Kumbh Sans';
      --header-font: 'DM Sans';
 }
@@ -21,7 +22,16 @@ body{
 ul{
     list-style: none;
 }
-
+::-webkit-scrollbar {
+       width: 6px;
+ }
+ ::-webkit-scrollbar-track {
+       background: transparent; 
+  }
+  ::-webkit-scrollbar-thumb {
+       background: var(--main-color);
+         border-radius:10px;
+  }
 a{
      text-decoration: none;
 }
