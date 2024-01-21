@@ -1,6 +1,12 @@
 import { Link, NavLink } from 'react-router-dom'
 import logo from "../../../assets/logo2.png"
+import { HiOutlineMenu } from "react-icons/hi";
+import { useContext } from 'react';
+import { sidebarContext } from './navcontext';
 const Header = () => {
+  const [sidebarStatus, setSidebarStatus] = useContext(sidebarContext)
+
+  const openSidebar = () => setSidebarStatus(true)
   return (
     <header>
               <div className="inner-row">
@@ -18,7 +24,9 @@ const Header = () => {
 
                                              <div className="header-btn">
                                                        <Link to={'/contact-us/'}>Contact Us</Link>
+                                                       <span onClick={openSidebar} className="mobile-btn"><HiOutlineMenu /></span>
                                              </div>
+                                             
                                     </nav>
                          </div>
               </div>

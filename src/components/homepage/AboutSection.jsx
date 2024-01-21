@@ -11,17 +11,17 @@ const AboutSection = () => {
   return (
     <div className="about-section">
                <div className="inner-row">
+                          <div className="title-tag blue">
+                                    <span></span>
+                                      <h3>Who We Are</h3>
+                           </div>
                           <div className="about-section-content">
-                                       <div className="about-section-column">
-                                                  <div className="title-tag blue">
-                                                            <span></span>
-                                                             <h3>Who We Are</h3>
-                                                  </div>
+                                       <div className="about-section-column picture">
                                                   <div className="about-image">
                                                             <img src={about1} alt="" />
                                                   </div>
                                        </div>
-                                       <div className="about-section-column">
+                                       <div className="about-section-column description">
                                                   <h4>Greenit Environmental Management Network works to promote sustainable, equitable and participatory development through <span>environmental research</span> and <span>dissemination</span> of socially relevant educative materials.</h4>
                                                   <p>We are a non governmental organization in Zambia working in the Enviromental and Climate Change sector that not only promotes sustainable development of rural communities but also enhances Environmental education and awareness for a greater future in Health, Agriculture and Economic development.</p>
 
