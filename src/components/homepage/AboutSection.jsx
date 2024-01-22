@@ -23,11 +23,11 @@ const AboutSection = () => {
                                        </div>
                                        <div className="about-section-column description">
                                                   <h4>Greenit Environmental Management Network works to promote sustainable, equitable and participatory development through <span>environmental research</span> and <span>dissemination</span> of socially relevant educative materials.</h4>
-                                                  <p>We are a non governmental organization in Zambia working in the Enviromental and Climate Change sector that not only promotes sustainable development of rural communities but also enhances Environmental education and awareness for a greater future in Health, Agriculture and Economic development.</p>
+                                                  <p>We are a non governmental organization in Zambia working in the Enviromental and Climate Change sector that not only promotes sustainable development in rural communities but also enhances Environmental education and awareness for a greater future in Health, Agriculture and Economic development.</p>
 
                                                   <p>Our organization is rapidly expanding in the social development sphere by incorporating various activities in an effort to attain sustainable development goals by 2030. We contribute relevant and contemporary education on the effects of deforestation, plastic pollution, climate change, waste management, water management etc., to learners in schools and to the general public</p>
 
-                                                  <Link to={'/who-we-are'}>Read More</Link>
+                                                  <Link to={'/who-we-are/'}>Read More</Link>
                                        </div>
                           </div>
                           <div className="partners-section">

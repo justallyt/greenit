@@ -172,7 +172,7 @@ header{
 
 .sidebar-content{
         position: absolute;
-        width: 500px;
+        width: 450px;
         height: 100%;
         background: white;
         padding: 30px 0;
@@ -433,4 +433,9 @@ footer{
        .copyright-section p{
               font-size: 13px;
        }
+}
+@media(max-width: 480px){
+        .sidebar-content{
+                width: 100%;
+        }
 }
