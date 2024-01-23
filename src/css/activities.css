@@ -1,3 +1,27 @@
 .activities-hero{
        padding: 80px 0;
 }
+
+.activities-hero-grid{
+       display: grid;
+       grid-template-columns: 2fr 1.5fr;
+       gap: 80px;
+}
+.activities-hero-texts h1{
+      font-size: 55px;
+      line-height: 70px;
+      margin: 10px 0;;
+}
+.activities-hero-texts p{
+       font-size: 18px;
+       line-height: 28px;
+}
+
+.activities-hero-image img{
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+       max-height: 350px;
+}
