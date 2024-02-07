@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import about1 from '../../assets/about1.jpg'
-import logo1 from '../../assets/ecofolk.png'
-import logo2 from '../../assets/ecofoot.png'
-import logo3 from '../../assets/ecoideas.png'
-import logo4 from '../../assets/ecolab.png'
-import logo5 from '../../assets/ecoshield.png'
-import logo6 from '../../assets/green-planet.png'
+import logo1 from '../../assets/pollination.jpg'
+import logo2 from '../../assets/biosoilz.png'
+import logo3 from '../../assets/zccn.webp'
+import logo4 from '../../assets/moe.jpg'
+import logo5 from '../../assets/cej.webp'
+import logo6 from '../../assets/njamasi.jpg'
 
 const AboutSection = () => {
   return (
@@ -22,6 +22,7 @@ const AboutSection = () => {
                                                   </div>
                                        </div>
                                        <div className="about-section-column description">
+                                                   <h2>Green is Great  Every Season</h2>
                                                   <h4>Greenit Environmental Management Network works to promote sustainable, equitable and participatory development through <span>environmental research</span> and <span>dissemination</span> of socially relevant educative materials.</h4>
                                                   <p>We are a non governmental organization in Zambia working in the Enviromental and Climate Change sector that not only promotes sustainable development in rural communities but also enhances Environmental education and awareness for a greater future in Health, Agriculture and Economic development.</p>
 

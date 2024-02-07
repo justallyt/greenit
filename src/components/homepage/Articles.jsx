@@ -1,7 +1,9 @@
-import article1 from "../../assets/climate-change.jpg"
-import article2 from "../../assets/service3.jpg"
-import article3 from '../../assets/service4.jpg'
+import { useNavigate, Link } from 'react-router-dom'
+import { FiExternalLink } from "react-icons/fi";
+
 const Articles = () => {
+      const navigate = useNavigate();
+      const articles = localStorage.getItem("Articles") ? JSON.parse(localStorage.getItem("Articles")) : []
   return (
     <div className="articles-section">
               <div className="inner-row">
@@ -11,27 +13,21 @@ const Articles = () => {
                                                   <span></span>
                                      </div>
                                      <div className="articles-row">
-                                                 <div className="article-moja">
-                                                            <div className="article-image">
-                                                                  <img src={article1} alt="" />
-                                                            </div>
-                                                            <h4>Is Climate Change happening faster than expected?</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Susee varius enim lori hlome disect me trul ymeyke anyik dodslmo dilir krist mondi...</p>
-                                                 </div>
-                                                 <div className="article-moja">
-                                                            <div className="article-image">
-                                                                  <img src={article2} alt="" />
-                                                            </div>
-                                                            <h4>How Volunteers changed the face of Lusaka.</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Susee varius enim lori hlome disect me trul ymeyke anyik dodslmo dilir krist mondi...</p>
-                                                 </div>
-                                                 <div className="article-moja">
-                                                            <div className="article-image">
-                                                                  <img src={article3} alt="" />
-                                                            </div>
-                                                            <h4>The Young Generation Purpose for Our Environment.</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Susee varius enim lori hlome disect me trul ymeyke anyik dodslmo dilir krist mondi...</p>
-                                                 </div>
+                                                 { articles && articles.length > 0 ?
+                                                        articles.slice(0,3).map(item =>
+                                                            <div className="article-moja" key={item.id} onClick={()=> navigate(`/article/${item.slug}`)}>
+                                                                      <div className="article-image">
+                                                                            <img src={item.articleImage.url} alt="" />
+                                                                      </div>
+                                                                      <h4>{item.blogTitle}</h4>
+                                                                      <p>{item.articleBody.html.slice(3,110)}...</p>
+                                                                      <Link to={`/article/${item.slug}`}>Read Article <span><FiExternalLink /></span></Link>
+                                                           </div>
+                                                         )
+                                                   :
+                                                     <p>Apologies! No Articles to show at the moment.</p>
+                                                }
+                                                 
                                      </div>
                          </div>
               </div>

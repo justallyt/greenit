@@ -8,6 +8,7 @@
 
 :root{
      --main-color: rgb(90, 209, 104);
+     --auxiliary-color: rgb(148, 60, 36);
      --secondary-color: rgb(0, 157, 255);
      --dark-color: rgb(0, 19, 6);
      --font-primary: 'Kumbh Sans';

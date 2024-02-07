@@ -17,6 +17,7 @@
 }
 
 .article-image img{
+       max-height: 420px;
      border-radius: 20px;
      -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
@@ -49,7 +50,8 @@
       width: 90%;
 }
 .article-description a,
-.single-article-moja a{
+.single-article-moja a,
+.article-moja a{
       font-weight: 500;
       margin-top: 20px;
       display: flex;
@@ -63,11 +65,13 @@
       -o-transition: all 0.5s ease;
 }
 .article-description a:hover,
-.single-article-moja a:hover{
+.single-article-moja a:hover,
+.article-moja a:hover{
        color: var(--main-color);
 }
 .article-description a span,
-.single-article-moja a span{
+.single-article-moja a span,
+.article-moja span{
         display: flex;
 }
 
@@ -134,8 +138,73 @@
 
 /* Single Article page */
 .single-article-body{
-        padding: 100px 0;
+        padding: 60px 0 100px 0;
 }
+
+.single-article-content .back-btn{
+       display: inline-flex;
+       gap: 5px;
+       align-items: center;
+       color: var(--main-color); 
+       padding-bottom: 5px;
+       border-bottom: 2px solid var(--main-color);
+}
+.single-article-content .blog-title{
+        font-size: 55px;
+        margin: 20px 0;
+        width: 90%;
+}
+.single-article-content .main-image img{
+       max-height: 800px;
+}
+
+.single-article-body-section{
+       display: grid;
+       grid-template-columns:300px 3fr;
+       gap: 70px;;
+}
+.single-article-body-section .author-side{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        height: max-content;
+}
+.author-side .author-profile-image img{
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+.author-side h4{
+        font-weight: 500;
+        font-size: 20px;
+}
+.author-side p{
+       font-size: 15px;
+       margin: 5px 0;
+       color: rgb(94, 94, 94);
+}
+.single-article-body-section{
+       margin-top: 50px;
+}
+
+.article-body p{
+       font-size: 18px;
+       line-height: 30px;
+       margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
 @media(max-width: 1090px){
         .articles-hero-section .intro h1{
                 width: 100%;

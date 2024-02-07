@@ -1,27 +1,150 @@
 .activities-hero{
-       padding: 80px 0;
+       height: 80vh;
+       padding-bottom: 40px;
+       background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.3), transparent), url('../assets/greenit2.jpg') no-repeat;
+       background-size: cover;
+       background-position: top;
 }
 
-.activities-hero-grid{
-       display: grid;
-       grid-template-columns: 2fr 1.5fr;
-       gap: 80px;
+.activities-hero-content{
+       height: 80vh;
+       display: flex;
+       align-items: flex-end;
+       padding-bottom: 100px;
 }
-.activities-hero-texts h1{
-      font-size: 55px;
-      line-height: 70px;
-      margin: 10px 0;;
+
+.themes-body-section{
+       padding: 100px 0;
 }
-.activities-hero-texts p{
+.themes-body-section-content h2{
+       text-align: center;
+       font-size: 25px;
+       width: 800px;
+       margin: auto;
+       line-height: 40px;
+       font-weight: 500;
+}
+.themes-body-row{
+       margin-top: 50px;
+}
+.theme-moja{
+       border: 1px solid gainsboro;
+       margin-bottom: 20px;
+       border-radius: 7px;
+       -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+       -ms-border-radius: 7px;
+       -o-border-radius: 7px;
+       cursor: pointer;
+}
+.theme-moja .theme-header{
+       display: flex;
+       justify-content: space-between;
+       padding: 40px;
+       align-items: center;
+}
+.theme-header h3{
+       font-size: 28px;
+       color: #484848;
+}
+.theme-moja.active .theme-header h3{
+       color: var(--main-color);
+}
+.theme-header span{
+       font-size: 25px;
+       transition: all 0.7s ease;
+       -webkit-transition: all 0.7s ease;
+       -moz-transition: all 0.7s ease;
+       -ms-transition: all 0.7s ease;
+       -o-transition: all 0.7s ease;
+}
+.theme-moja.active .theme-header span{
+       transform: rotate(180deg);
+       color: var(--main-color);
+       -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+       -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+}
+
+.theme-body{
+       padding: 0px 40px;
+       width: 98%;
+       margin: auto;
+       max-height: 0;
+       overflow: hidden;
+       transition: all 0.7s ease;
+       -webkit-transition: all 0.7s ease;
+       -moz-transition: all 0.7s ease;
+       -ms-transition: all 0.7s ease;
+       -o-transition: all 0.7s ease;
+}
+.theme-moja.active .theme-body{
+       border-top: 1px solid gainsboro;
+       max-height: 5500px;
+}
+.theme-body .theme-body-inner{
+         padding: 20px 0 30px 0px;
+}
+
+.theme-body p{
        font-size: 18px;
-       line-height: 28px;
+       line-height: 30px;
+}
+.theme-list{
+       margin-top: 20px;
+}
+.theme-list ul li{
+       display: flex;
+       gap: 10px;
+       margin-bottom: 10px;
+}
+.theme-list .number{
+       font-weight: 600;
+       font-size: 18px;
+}
+.theme-list h4{
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 5px;
+}
+.theme-list .inner-list{
+       display: flex;
+       gap: 5px;;
+}
+.inner-list span{
+        width: 8px;
+        height: 8px;
+        background: var(--main-color);
+        display: flex;
+        margin-top: 10px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        flex-shrink: 0;
 }
 
-.activities-hero-image img{
-       border-radius: 10px;
-       -webkit-border-radius: 10px;
-       -moz-border-radius: 10px;
-       -ms-border-radius: 10px;
-       -o-border-radius: 10px;
-       max-height: 350px;
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1090px){
+       .themes-body-section-content h2{
+               width: 100%;
+       }
+}
+
+@media(max-width: 768px){
+       .theme-header h3,
+       .theme-header span{
+               font-size: 20px;
+       }
 }

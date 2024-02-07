@@ -7,7 +7,7 @@ const AboutHero = () => {
               <div className="inner-row">
                          <div className="title-tag">
                                       <span></span>
-                                      <h3>Know About Us</h3>
+                                      <h3>About Us</h3>
                          </div>
                          <div className="about-hero-content">
                                      <div className="about-hero-texts">

@@ -11,7 +11,7 @@ const ServicesSection = () => {
                                                     <div className="services-column">
                                                             <div className="title-tag">
                                                                       <span></span>
-                                                                     <h3>Who We Do</h3>
+                                                                     <h3>What We Do</h3>
                                                              </div>
                                                              <h1>Elevating Environmental Programs & Activities</h1>
                                                     </div>

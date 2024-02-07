@@ -1,6 +1,19 @@
 .about-hero-section{
        padding: 80px 0;
 }
+.about-section-v2{
+        height: 80vh;
+        padding-bottom: 40px;
+        background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1), transparent), url('../assets/aboutHero-Img.jpg') no-repeat;
+        background-size: cover;
+        background-position: top;
+}
+.about-section-content-v2{
+        display: flex;
+        height: inherit;
+        align-items: flex-end;
+        padding-bottom: 80px;
+}
 .about-hero-content{
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -12,11 +25,20 @@
        -moz-border-radius: 10px;
        -ms-border-radius: 10px;
        -o-border-radius: 10px;
-}
-.about-hero-content h1{
+} 
+ .about-hero-content h1{
        font-size: 50px;
        margin: 10px 0;
        line-height: 65px;
+}
+.about-hero-texts{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+}
+.about-hero-texts h1{
+         font-size: 60px;
+         color: whitesmoke;
 }
 .about-hero-texts p,
 .more-details p{
@@ -30,10 +52,7 @@
      gap: 50px;
      margin-top: 20px;
 }
-.statements-row{
-       display: flex;
-       align-items: center;
-}
+
 .statements-row h3{
        font-size: 24px;
        text-transform: uppercase;
@@ -54,21 +73,9 @@
       display: flex;;
 }
 
-.statements-row p{
-       font-size: 20px;
-       margin-top: 10px
-}
-.statements-row p.mission{
-        font-weight: 500;
-        font-size: 22px;
-        color: var(--main-color);
-}
-.statements-row .separator{
-          padding: 10px 0;
-}
 
 .about-hero-images{
-    margin-top: 30px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -80,6 +87,38 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+.more-about-section{
+        padding: 100px 0;
+}
+.more-about-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+}
+.more-about-details p{
+        font-size: 20px;
+        margin-bottom: 15px;
+        line-height: 32px;
+}
+
+.more-about-section-content .statements-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        margin-top: 30px;
+}
+.statements-row p{
+      font-size: 20px;
+      line-height: 32px;
+}
+.statements-row h2{
+        font-weight: 500;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: var(--main-color);
+        margin-bottom: 10px;
 }
 
 .values-section{
@@ -187,8 +226,14 @@
 
 /* Responsiveness */
 @media(max-width: 1090px){
+       .about-hero-texts h1{
+            font-size: 40px;
+           line-height: 55px;
+       }
+       .more-about-details,
          .about-hero-content,
-         .more-details{
+         .more-details,
+         .more-about-section-content .statements-row{
                 grid-template-columns: 1fr;
                 gap: 20px;
          }
@@ -206,6 +251,7 @@
 
 @media(max-width: 768px){
        .about-hero-content h1,
+       .about-hero-texts h1,
        .values-section-content h1,
        .team-intro h1{
                 font-size: 40px;
@@ -217,6 +263,13 @@
 }
 
 @media(max-width: 500px){
+        .about-hero-texts h1{
+                  font-size: 30px;
+                  line-height: 45px;
+        }
+        .about-hero-images{
+                 grid-template-columns: 1fr;
+        }
           .team-moja{
                 width: 90%;
           }
