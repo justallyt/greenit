@@ -92,7 +92,10 @@
      -moz-border-radius: 5px;
      -ms-border-radius: 5px;
      -o-border-radius: 5px;
-     outline: none
+     padding-left: 10px;
+     outline: none;
+     font-family: var(--font-primary);
+     font-size: 16px;
 }
 .form-row textarea{
       width: 100%;
@@ -104,6 +107,9 @@
       -o-border-radius: 5px;
       background: transparent;
       outline: none;
+      padding: 10px;
+      font-family: var(--font-primary);
+      font-size: 16px;
 }
 .form-btn{
       display: flex;
@@ -124,7 +130,16 @@
        border: none;
        font-family: var(--font-primary);
 }
+.form-row .error{
+       font-size: 13px;
+       color: red;
+}
 
+.server-msg{
+       color: var(--main-color);
+       text-align: center;
+       margin-top: 20px;
+}
 @media(max-width: 1090px){
       .contact-section-content{
              grid-template-columns: 1fr;

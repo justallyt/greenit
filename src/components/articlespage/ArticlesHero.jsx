@@ -3,7 +3,6 @@ import { FiExternalLink } from "react-icons/fi";
 const ArticlesHero = () => {
   const navigate = useNavigate();
   const articles = localStorage.getItem("Articles") ? JSON.parse(localStorage.getItem("Articles")) : []
-  console.log(articles);
 
   return (
     <div className="articles-hero-section">
@@ -20,7 +19,7 @@ const ArticlesHero = () => {
                                                 <div className="article-description">
                                                             <div className="article-description-inner">
                                                                        <div className="date">
-                                                                                   <h3>23<sup>rd</sup> September, 2023</h3>
+                                                                                   <h3>{articles[0].date}</h3>
                                                                        </div>
                                                                         <h1>{articles[0].blogTitle}</h1>
                                                                         <p>{articles[0].articleBody.html.slice(3,180)}...</p>

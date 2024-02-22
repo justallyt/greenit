@@ -20,21 +20,22 @@ const ContactHero = () => {
                                      <div className="contact-section-column">
                                                   <div className="contact-box">
                                                               <h3>Let&apos;s talk!</h3>
-                                                              <p> <span><FaPhone /></span>+260 97 9445077</p>
-                                                              <p><span><BsEnvelopeFill /></span>hello@gemnzambia.org</p>
+                                                              <p> <span><FaPhone /></span>+260 979 445 077 / +260 969 520 500</p>
+                                                              <p><span><BsEnvelopeFill /></span>info@greenitzambia.org</p>
                                                   </div>
                                                   <div className="contact-box">
                                                              <h3>Visit Office</h3>
-                                                             <p><span><FaMapPin /></span>178 Brewery Drive, Hudson, NH 03041 Zambia</p>
+                                                             <p><span><FaMapPin /></span>Plot 74 - 90 Section, Nampundwe Township, Shibuyunji - LUSAKA
+</p>
                                                   </div>
                                                   <div className="contact-box">
                                                               <h3>Let&apos;s Connect</h3>
                                                               <div className="contact-social-links">
                                                                      <ul>
-                                                                                <li><Link to={'/'}><span><FaFacebookF /></span></Link></li>
-                                                                                <li><Link to={'/'}><span><FaXTwitter /></span></Link></li>
-                                                                                <li><Link to={'/'}><span><AiFillInstagram /></span></Link></li>
-                                                                                <li><Link to={'/'}><span><RxLinkedinLogo /></span></Link></li>
+                                                                                <li><Link to={'https://web.facebook.com/profile.php?id=100086097650802'}><span><FaFacebookF /></span></Link></li>
+                                                                                {/* <li><Link to={'/'}><span><FaXTwitter /></span></Link></li>
+                                                                                <li><Link to={'/'}><span><AiFillInstagram /></span></Link></li> */}
+                                                                                <li><Link to={'https://www.linkedin.com/company/greenit-enviromental-management-network/'}><span><RxLinkedinLogo /></span></Link></li>
                                                                      </ul>
                                                               </div>
                                                   </div>

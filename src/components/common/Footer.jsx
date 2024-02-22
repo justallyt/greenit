@@ -20,42 +20,50 @@ const Footer = () => {
                                                  </div>
                                                  <p>Greenit Environmental Management Network is an NGO spearheding the green revolution for the Earth in Africa.</p>
 
-                                                 <h4>Follow us on</h4>
-                                                 <div className="footer-social-links">
-                                                            <ul>
-                                                                      <li><a href=""><span><FaFacebookF /></span></a></li>
-                                                                      <li><a href=""><span><BsTwitterX /></span></a></li>
-                                                                      <li><a href=""><span><AiFillInstagram /></span></a></li>
-                                                                      <li><a href=""><span><FaLinkedinIn /></span></a></li>
-                                                            </ul>
-                                                 </div>
+                                                 <h4>Subscribe to our Newsletter</h4>
+                                                 <form action="">
+                                                           <div className="form-input">
+                                                                    <input type="text" placeholder="Your email address"/>
+                                                                    <button type="submit">Subscribe</button>
+                                                           </div>
+                                                 </form>
                                      </div>
                                      <div className="footer-column-grid">
                                                 <div className="footer-column">
                                                            <h3><span></span>Quick Links</h3>
                                                            <ul>
-                                                                    <li><Link to={''}>Home</Link></li>
-                                                                    <li><Link to={''}>About</Link></li>
-                                                                    <li><Link to={''}>Programs & Activities</Link></li>
-                                                                    <li><Link to={''}>Articles</Link></li>
+                                                                    <li><Link to={'/'}>Home</Link></li>
+                                                                    <li><Link to={'/who-we-are/'}>About</Link></li>
+                                                                    <li><Link to={'/what-we-do/'}>Programs & Activities</Link></li>
+                                                                    <li><Link to={'/articles/'}>Articles</Link></li>
                                                                     <li><Link to={''}>Press</Link></li>
-                                                                    <li><Link to={''}>Contact Us</Link></li>
+                                                                    <li><Link to={'/contact-us/'}>Contact Us</Link></li>
                                                            </ul>
                                                 </div>
                                                 <div className="footer-column">
                                                          <h3><span></span>Get in Touch</h3>
                                                           <p>
                                                                     <span><TbCurrentLocation /></span>
-                                                                    Nampundwe Chibombo, Shibuyunji District
+                                                                    Nampundwe, SHIBUYUNJI
                                                           </p>
                                                           <p>
                                                                      <span><BsEnvelope /></span>
-                                                                     hello@gemnzambia.org
+                                                                     info@greenitzambia.org
                                                           </p>
                                                           <p>
                                                                      <span><FiPhoneCall /></span>
-                                                                     +260 123456789
+                                                                     +260 979 445 077 / +260 969 520 500
                                                           </p>
+
+                                                          <h4>Follow us on</h4>
+                                                          <div className="footer-social-links">
+                                                            <ul>
+                                                                      <li><a href="https://web.facebook.com/profile.php?id=100086097650802"><span><FaFacebookF /></span></a></li>
+                                                                      {/* <li><a href=""><span><BsTwitterX /></span></a></li>
+                                                                      <li><a href=""><span><AiFillInstagram /></span></a></li> */}
+                                                                      <li><a href="https://www.linkedin.com/company/greenit-enviromental-management-network/"><span><FaLinkedinIn /></span></a></li>
+                                                            </ul>
+                                                        </div>
                                                 </div>
                                      </div>
                          </div>

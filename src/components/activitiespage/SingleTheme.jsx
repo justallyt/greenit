@@ -17,24 +17,31 @@ const SingleTheme = ({ data }) => {
                                    <div className="intro">
                                              <p>{data.introText}</p>
                                    </div>
-                                   <div className="theme-list">
-                                             <ul>
-                                                      { data.content.map((item, index) => 
-                                                               <li key={item.id}>
-                                                                       <div className="number">
-                                                                                  {index+1}. 
-                                                                       </div>
-                                                                       <div className="list-texts">
-                                                                                <h4>{item.list_name}</h4>
-                                                                                 { item.list_description === " " ? 
-                                                                                       item.list_body.map(item => <p key={item} className="inner-list" ><span></span>{item}</p>)
-                                                                                  :
-                                                                                      <p>{item.list_description}</p>
-                                                                                  }
-                                                                       </div>                                        
-                                                               </li>
-                                                        )}
-                                             </ul>
+                                   <div className="theme-list-row">
+                                              <div className="theme-list-column">
+                                                         <div className="theme-list">
+                                                                <ul>
+                                                                         { data.content.map((item, index) => 
+                                                                                  <li key={item.id}>
+                                                                                          <div className="number">
+                                                                                                     {index+1}. 
+                                                                                         </div>
+                                                                                          <div className="list-texts">
+                                                                                                   <h4>{item.list_name}</h4>
+                                                                                                    { item.list_description === " " ? 
+                                                                                                          item.list_body.map(item => <p key={item} className="inner-list" ><span></span>{item}</p>)
+                                                                                                     :
+                                                                                                         <p>{item.list_description}</p>
+                                                                                                     }
+                                                                                          </div>                                        
+                                                                                  </li>
+                                                                           )}
+                                                                </ul>
+                                                      </div>
+                                              </div>
+                                              <div className="theme-list-column image">
+                                                          <img src={data.image} alt="" />
+                                              </div>
                                    </div>
                          </div>
                </div>

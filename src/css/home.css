@@ -226,7 +226,7 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-
+       mix-blend-mode: multiply;
 }
 .about-section-content p{
          font-size: 20px;
@@ -632,7 +632,12 @@
         -ms-border-radius: 6px;
         -o-border-radius: 6px;
         color: whitesmoke;
-        font-size: 15px
+        font-size: 15px;
+        gap: 5px;
+}
+.nudge-section-content a span{
+        display: flex;
+        ;
 }
 
 .articles-section{

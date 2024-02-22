@@ -2,7 +2,7 @@ export const themes = [
      {
         id: 0,
         title: 'Biodiversity Enhancement',
-        link: '/',
+        image: '../img/biodiversity.jpg',
         introText: 'The initiatives listed below aim to enhance and protect biodiversity while also engaging and empowering communities to become active participants in conservation efforts.',
         content: [
                 {
@@ -40,7 +40,7 @@ export const themes = [
      {
         id: 34,
         title: 'Environmental Education & Outreach',
-        link: '/',
+        image: '../img/enveducation.jpg',
         introText: 'The initiatives listed below aim aim to educate and empower people to become active stewards of the environment through a range of initiatives and activities. We engage specific demographic groups in environmental conservation, education and empowerment, fostering a sense of ownership and active participation in sustainable practices.',
         content: [
                 {
@@ -82,7 +82,7 @@ export const themes = [
      {
         id: 1,
         title: 'Climate Change',
-        link: '/',
+        image: '../img/climate-change.jpg',
         introText: 'The initiatives listed below aim to address the impacts of climate change, promote resilience, and reduce greenhouse gas emissions, contributing to the global effort to mitigate climate change and its associated risks.',
         content: [
                 {
@@ -120,7 +120,7 @@ export const themes = [
      {
         id: 393,
         title: 'Food Security',
-        link: '/',
+        image: '../img/food-security.jpg',
         introText: 'The initiatives listed below aim to address food insecurity, improve livelihood opportunities, and promote sustainable agriculture and food production practices, ultimately contributing to the well-being of communities and the conservation of natural resources.',
         content: [
                 {
@@ -158,7 +158,7 @@ export const themes = [
      {
         id: 3,
         title: 'Waste Management',
-        link: '/',
+        image: '../img/waste-management.jpg',
         introText: 'The initiatives listed below aim aim to promote responsible waste management, reduce environmental pollution, and encourage sustainable resource use. They also provide opportunities for community engagement and involvement in waste reduction efforts.',
         content: [
                 {
@@ -196,7 +196,7 @@ export const themes = [
      {
         id: 4,
         title: 'Water Security',
-        link: '/',
+        image: '../img/water-security.jpg',
         introText: '',
         content: [
                 {

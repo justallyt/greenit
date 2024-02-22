@@ -8,7 +8,7 @@ const MoreAbout = () => {
                           <div className="more-about-section-content">
                                      <div className="more-about-details">
                                                <div className="more-details-column">
-                                                           <p>Greenit Environmental Management Network was established in 2022 with an aim to sensitize and develop awareness of environmental issues among learners and by extension members of society as a whole.Introducing environmental conversations early in their childhood development has greater long-team output in revamping ideologies pertaining issues such as climate change, pollution, deforestation and agro-technologies.</p>
+                                                           <p>Greenit Environmental Management Network was established in 2022 with an aim to sensitize and develop awareness of environmental issues among learners and by extension members of society as a whole. Introducing environmental conversations early in their childhood development has greater long-team output in revamping ideologies pertaining issues such as climate change, pollution, deforestation and agro-technologies.</p>
                                                            <p>Greenit promotes sustainable practices, reduces carbon emissions, and inspires people to take meaningful action towards a greener, more sustainable future. We believe that it is our collective responsibility to take action against climate change and protect our planet against environmental degradation.</p>
                                                </div>
                                                <div className="more-details-column">
@@ -20,7 +20,7 @@ const MoreAbout = () => {
                                     <div className="statements-row">
                                                  <div className="statement-moja">
                                                           <h2>Our Mission</h2>
-                                                          <p>To empower the next generation with knowlegde and skills to build a thriving and sustainable future through inclusive leadership and collaborative partnerships.</p>
+                                                          <p>To foster inclusive socio-economic empowerment through environmental protection programs, nurturing future leaders with the knowledge, passion, and skills for environmental sustainability, via diverse collaborative partnerships.</p>
                                                  </div>
                                                  <div className="statement-moja">
                                                           <h2>Our Vision</h2>

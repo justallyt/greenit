@@ -4,7 +4,7 @@ import logo1 from '../../assets/pollination.jpg'
 import logo2 from '../../assets/biosoilz.png'
 import logo3 from '../../assets/zccn.webp'
 import logo4 from '../../assets/moe.jpg'
-import logo5 from '../../assets/cej.webp'
+import logo5 from '../../assets/cej.png'
 import logo6 from '../../assets/njamasi.jpg'
 
 const AboutSection = () => {

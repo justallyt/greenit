@@ -1,6 +1,6 @@
-import porfolio1 from "../../assets/portfolio3.jpg"
-import portfolio2 from "../../assets/portfolio1.jpg"
-import portfolio3 from '../../assets/portfolio2.jpg'
+import porfolio1 from "../../assets/planter.jpg"
+import portfolio2 from "../../assets/sgc.jpg"
+import portfolio3 from '../../assets/envday.jpg'
 
 const Portfolio = () => {
   return (
@@ -20,21 +20,21 @@ const Portfolio = () => {
                                                              <div className="overlay"></div>
                                                              <img src={porfolio1} alt="" />
                                                              <div className="portfolio-text">
-                                                                       <h3>Match Against Plastic Pollution</h3>
+                                                                       <h3>2023 National Tree Planting Exercise</h3>
                                                              </div>
                                                    </div>
                                                    <div className="portfolio-moja">
                                                              <div className="overlay"></div>
                                                              <img src={portfolio2} alt="" />
                                                              <div className="portfolio-text">
-                                                                       <h3>Public Place Clean up</h3>
+                                                                       <h3>School Green Clubs</h3>
                                                              </div>
                                                    </div>
                                                    <div className="portfolio-moja">
                                                              <div className="overlay"></div>
                                                              <img src={portfolio3} alt="" />
                                                              <div className="portfolio-text">
-                                                                       <h3>School Green Clubs</h3>
+                                                                       <h3>World Environment Day</h3>
                                                              </div>
                                                    </div>
                                       </div>
